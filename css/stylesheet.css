@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'coopforgedmedium';
+    src: url('coopforged_medium-webfont.woff2') format('woff2'),
+         url('coopforged_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+	width: 384px;
+	height: 600px;
+	border: solid black 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  overflow: hidden;
+	background-image: url(../images/water.jpg);
+	background-repeat: no-repeat;
+	background-size: 1200px;
+}
+
+.d {
+	font-family: 'Georgia';
+}
+
+.o {
+	font-family: 'CoopForged';
+}
+
+.w {
+	font-family: 'CoopForged';
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 60px;
+	text-align: center;
+}
+
+.m {
+	margin-top: 30px;
+}
+
+.deep {
+	width: auto;
+	height: 450px;
+	margin-top: -180px;
+	margin-left: 50px;
+	position: relative;
+}
+
+#paper {
+	width: 300px;
+	height: auto;
+	margin-top: -250px;
+	margin-left: 50px;
+	position: relative;
+	pointer-events: auto;
+	display: inline-block;
+}
+
+.paper2 {
+	animation: turn 10s infinite;
+	animation-play-state: paused;
+	position: relative;
+}
+
+.paper2:hover {
+	animation-play-state: running;
+}
+
+	@keyframes turn {
+		0%, 100% { transform: rotateX(0deg)rotateY(0deg)rotateZ(0deg);}
+		20%, 80% { transform: rotateX(3deg)rotateY(3deg)rotateZ(3deg);}
+		50% { transform: rotateX(-3deg)rotateY(-3deg)rotateZ(-3deg);}
+	}
+
+.ripples {
+	width: 310px;
+	height: auto;
+	top: -470px;
+	left: 45px;
+	position: relative;
+	animation: opacity 10s infinite;
+	z-index: -1;
+}
+
+.bubbles {
+	width: 50px;
+	top: -680px;
+	left: -150px;
+	position: relative;
+	animation: move 10s infinite;
+}
+
+@keyframes opacity {
+	0% { opacity: 1 }
+	50% { opacity: 0 }
+	100% { opacity: 1 }
+}
+
+@keyframes move {
+	0% { top: -680px }
+	33% { top: -700px }
+	66% { top: -670px }
+	100% { top: -680px }
+}
