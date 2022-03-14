@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'coopforgedmedium';
-    src: url("../font/CoopForged Medium.ttf") format("ttf");
+    src: url(../font/CoopForged Medium.ttf) format(ttf);
     font-weight: normal;
     font-style: normal;
 }
